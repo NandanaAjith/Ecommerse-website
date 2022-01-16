@@ -1,0 +1,9 @@
+[
+    { "p_id": "1", "p_name": "Bitter melon (500 gram)", "p_image": "images/bittermelon.jpg", "p_price": 14 },
+    { "p_id": "2", "p_name": "Broccoli(500 gram)", "p_image": "images/brocolli.jpg", "p_price": 39 },
+    { "p_id": "3", "p_name": "Capsicum(100 gram)", "p_image": "images/capsicum.jpg", "p_price": 42 },
+    { "p_id": "4", "p_name": "Cauliflower(250 gram)", "p_image": "images/cauliflower.jpg", "p_price": 46 },
+    { "p_id": "5", "p_name": "ladies finger(250 gram)", "p_image": "images/ladiesfinger.jpg", "p_price": 42 },
+    { "p_id": "6", "p_name": "Potato(1 KG)", "p_image": "images/potato.jpg", "p_price": 24 },
+    { "p_id": "6", "p_name": "Tomato(1 KG)", "p_image": "images/tomato.jpg", "p_price": 45 }
+]

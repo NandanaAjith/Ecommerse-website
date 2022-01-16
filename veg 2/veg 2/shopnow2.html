@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="script/controller.js"></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="images/background.jpeg">
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-light" style="background-color: #7bc07b;">
+        <div class="icon">
+            <img src="images/icon.png" width="30" height="30" position="left">JUST ORGANIC
+        </div>
+
+    </nav>
+
+
+
+    <div ng-controller="myCntrl">
+        <div class="bg">
+
+            <div class="col-md-2"></div>
+            <div class="col-md-8 well">
+                <h3 class="basket">Add to Basket</h3>
+                <hr style="border-top:1px dotted #ccc;" />
+                <div id="bg-background" class="col-md-7">
+                    <h4 class="product">PRODUCTS
+                        <h4>
+                            <hr style="border-top:1px groovy #ccc;">
+                            <div id="product">
+                                <div id="p_list" ng-repeat="product in products ">
+                                    <h5>{{product.p_name}}</h5>
+                                    <center><img ng-src="{{product.p_image}}" width="200px" /></center>
+                                    <div><label>Price: {{product.p_price|currency: "Rs"}}</label></div>
+                                    <center><button type="button" ng-click="add_cart(product)"><span class = "glyphicon glyphicon-shopping-cart"></span> Add to cart</button></center>
+                                </div>
+                            </div>
+                </div>
+                <div class="pull-right col-md-5">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h5 class="mycart">MY CART</h5>
+                        </div>
+                        <div class="panel-body table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="product">Product</th>
+                                        <th class="Price">Price</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="cart in carts" ng-init="setTotals(cart)">
+                                        <td>{{cart.p_name}}</td>
+                                        <td>{{cart.p_price|currency: "Rs"}}</td>
+                                        <td><button type="button" ng-click="remove_cart(cart)" class="btn btn-danger"><span class = "glyphicon glyphicon-remove"></span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">Total</td>
+                                        <td>{{total|currency: "Rs"}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

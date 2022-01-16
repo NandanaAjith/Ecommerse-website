@@ -1,0 +1,60 @@
+.navbar {
+    color: rgba(12, 151, 12, 0.589);
+}
+
+.orga {
+    text-shadow: greenyellow;
+    color: rgb(20, 128, 36);
+}
+
+.heading {
+    margin: 100px;
+    color: rgb(88, 105, 63);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 100px;
+}
+
+.address {
+    color: rgb(112, 160, 39);
+    margin-top: 100px;
+}
+
+.time {
+    color: rgb(112, 160, 39);
+    margin-top: 100px;
+}
+
+.mycart {
+    text-align: center;
+}
+
+.Name {
+    color: rgb(16, 89, 121);
+}
+
+.mb-2 {
+    size: 150px;
+    color: rgb(170, 165, 165);
+    text-size-adjust: 10px;
+}
+
+.basket {
+    color: rgb(28, 53, 136);
+}
+
+.product {
+    color: rgb(39, 94, 196);
+}
+
+.mycart {
+    color: rgb(234, 237, 243);
+}
+
+.price {
+    color: rgb(39, 94, 196);
+}
+
+.icon {
+    text-align: left;
+    color: rgb(17, 97, 17);
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    margin: 5px;
+    padding: 1px;
+    box-sizing: var(--success-color);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: linear-gradient( 135deg, #a8d8a2, #d4e0da);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(226, 239, 241);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(214, 14, 14, 0.3);
+    width: 650px;
+}
+
+.form {
+    padding: 50px 40px;
+}
+
+.form h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    color: #3c4f63;
+}
+
+.form-field {
+    margin-bottom: 5px;
+}
+
+.form-field label {
+    display: ;
+    color: rgb(3, 2, 2);
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    border: solid 2px #6175e4;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+
+.form-field input:focus {
+    outline: silver;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+.form-field small {
+    color: var(--error-color);
+}
+
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #2b76c7;
+    border-bottom: 2px solid #007bff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: navajowhite;
+}
+
+#strength {
+    width: 10px;
+    position: center;
+    bottom: 200px;
+}
